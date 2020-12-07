@@ -77,9 +77,9 @@ st.subheader('Pre-Processed Input:')
 st.write(X_new)
 
 # -- Reads the saved normalization model
-load_sc = pickle.load(open('normalization.pkl', 'rb'))
+load_nor = pickle.load(open('normalization.pkl', 'rb'))
 #Apply the normalization model to new data
-X_new = load_sc.transform(X_new)
+X_new = load_nor.transform(X_new)
 
 # -- Display normalized new data:
 st.subheader('Normalized Input:')
