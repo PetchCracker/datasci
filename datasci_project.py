@@ -179,7 +179,7 @@ def ConvertSex(x):
 
 # -- Call function to display widgets and get data from user
 df = get_input()
-st.header('Application of MFU Prediction')
+st.header('Web Application of MFU Prediction')
 
 # -- Display new data from user inputs:
 st.subheader('User Input:')
@@ -189,7 +189,7 @@ st.write(df)
 # Combines user input data with sample dataset
 # The sample data contains unique values for each nominal features
 # This will be used for the One-hot encoding
-data_sample = pd.read_csv('data_simple2.csv')
+data_sample = pd.read_csv('tcas_simpledata.csv')
 df = pd.concat([df, data_sample], axis=0)
 
 # Delete MaritalStatus form numerical_data
